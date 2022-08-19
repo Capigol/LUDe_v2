@@ -13,3 +13,6 @@ dependencies:
         - openbabel
         - protobuf~=3.19.0
         - rdkit-pypi==2022.3.3
+     - conda:
+        - rdkit-pypi==2022.3.3
+        - openbabel
