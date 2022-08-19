@@ -1,6 +1,5 @@
 molvs==0.1.1
 rdkit-pypi==2022.3.3
 streamlit==1.12.0
-python3-openbabel
 openbabel
 protobuf~=3.19.0
