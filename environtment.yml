@@ -9,7 +9,7 @@ dependencies:
     - pip
     - pip:
         - molvs==0.1.1
-        - streamlit==1.2.0
-        - git+https://github.com/openbabel/openbabel
+        - streamlit==1.12.0
+        - openbabel
         - protobuf~=3.19.0
-        - rdkit==2020.09.1.0
+        - rdkit-pypi==2022.3.3
