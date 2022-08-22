@@ -3,6 +3,7 @@ channels:
 - rdkit
 - conda-forge
 - defaults
+- rdkit-pypi==2022.3.3
 dependencies:
     - libgcc=5.2.0
     - openbabel=3.1.1.1
