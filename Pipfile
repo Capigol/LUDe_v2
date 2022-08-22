@@ -1,10 +1,10 @@
 [[source]]
 name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true
+#url = "https://pypi.org/simple"
+#verify_ssl = true
 
 [dev-packages]
-openbabel "==2.13.0"
+openbabel="3.1.1.1"
 
 
 # IMPORTANT: If you need to add a package just for testing, please add it to
@@ -18,5 +18,5 @@ openbabel "==2.13.0"
 #streamlit = {editable = true, path = "."}
 molvs="0.1.1"
 streamlit="1.12.0"
-openbabel "==2.13.0"
+openbabel="3.1.1.1"
 rdkit-pypi="2022.3.3"
