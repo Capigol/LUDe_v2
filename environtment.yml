@@ -5,14 +5,10 @@ channels:
 - defaults
 dependencies:
     - libgcc=5.2.0
-    - rdkit
+    - openbabel=3.1.1.1
     - pip
     - pip:
         - molvs==0.1.1
         - streamlit==1.12.0
-        - openbabel
         - protobuf~=3.19.0
         - rdkit-pypi==2022.3.3
-     - conda:
-        - rdkit-pypi==2022.3.3
-        - openbabel
