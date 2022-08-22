@@ -1,14 +1,21 @@
 name: openbabel_v1
 channels:
+- rdkit
 - conda-forge
 - defaults
 dependencies:
     - libgcc=5.2.0
-    - rdkit=2022.3.3
-    - rdkit-pypi
+    - rdkit
     - pip
     - pip:
-        - molvs==0.1.1
-        - streamlit==1.12.0
+        - pandas==1.0.1
+        - numpy==1.18.1
+        - scikit-learn==0.22.2.post1
+        - mordred
+        - xgboost==1.0.2
+        - seaborn
+        - streamlit==0.82.0
+        - streamlit_tags
+        - matplotlib==3.3.2
+        - plotly==5.0.0
         - protobuf~=3.19.0
-        - rdkit-pypi
