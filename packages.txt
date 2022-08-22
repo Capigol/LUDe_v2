@@ -1,0 +1,2 @@
+libopenbabel-dev
+python3-openbabel
