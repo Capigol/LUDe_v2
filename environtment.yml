@@ -5,7 +5,6 @@ channels:
 - defaults
 dependencies:
     - libgcc=5.2.0
-    - openbabel=3.1.1.1
     - pip
     - pip:
         - molvs==0.1.1
