@@ -1,0 +1,14 @@
+name: openbabel_v1
+channels:
+- rdkit
+- conda-forge
+- defaults
+dependencies:
+    - libgcc=5.2.0
+    - pip
+    - pip:
+	- streamlit==1.2.0
+	- rdkit-pypi==2022.3.3
+	- openbabel-wheel
+	- openbabel
+        - protobuf~=3.19.0
