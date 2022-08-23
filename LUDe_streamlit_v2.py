@@ -253,7 +253,7 @@ def decoy_fase1(loaded_smiles, verbose = False):
             index = random.randrange(len(total_databases))
             database_random = total_databases[index]
             del total_databases[index]
-            df_database = pd.read_csv(directory_chembl + '\\' + database_random, sep="\t",index_col=False, header='infer') #abro la base de datos para comparar
+            df_database = pd.read_csv(directory_chembl + '/' + database_random, sep="\t",index_col=False, header='infer') #abro la base de datos para comparar
             
             # instead of workig with the descriptors value, we worked with the difference 
             # between the decoys molecules and the Query molecule 
