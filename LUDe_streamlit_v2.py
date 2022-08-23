@@ -103,7 +103,7 @@ st.markdown(" ")
 # Name of the dataset
 smiles_dataset = "example_molecules"
 
-directory_chembl = str(Path(r"D:\Lucas_2021\2021\streamlit\LUDe\LUDe_2022\Base_ChEMBL_final"))
+directory_chembl = str(Path("Base_ChEMBL_final"))
 
 
 # OPTIONS
