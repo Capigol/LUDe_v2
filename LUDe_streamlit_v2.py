@@ -606,7 +606,7 @@ def Dissimilarity_filter(df_decoys_PSS, fp_1, mol_standarizado, framework_query,
         if tan_sim <= float(max_similarity_limit):
             mols = [mol_standarizado,decoy_in_df["mol"]]
             filtro_tanimoto.append(smiles_DB)
-            res = rdFMCS.FindMCS(mols)
+            res = rdFMCS.FindMCS(mols,completeRingsOnly=False, timeout=0.05)
             tamanio_MCS = res.numAtoms
             
             # Limit of the fraction of the Maximum Common Substructure
