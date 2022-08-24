@@ -17,7 +17,7 @@ from rdkit.Chem import AllChem
 from rdkit.Chem import DataStructs # para calcular Tanimoto similarity
 from rdkit.Chem.Scaffolds import MurckoScaffold # para poder calcular los frameworks
 from rdkit.Chem import Descriptors # para poder calcular descriptores
-from rdkit.Chem import rdFMCS # para calcular la MCS
+from rdkit.Chem import MCS # para calcular la MCS
 import random
 from time import process_time
 import os
@@ -606,7 +606,7 @@ def Dissimilarity_filter(df_decoys_PSS, fp_1, mol_standarizado, framework_query,
         if tan_sim <= float(max_similarity_limit):
             mols = [mol_standarizado,decoy_in_df["mol"]]
             filtro_tanimoto.append(smiles_DB)
-            res = rdFMCS.FindMCS(mols, timeout=0.1)
+            res = MCS.FindMCS(mols, timeout=0.1)
             tamanio_MCS = res.numAtoms
             
             # Limit of the fraction of the Maximum Common Substructure
