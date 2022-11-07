@@ -1,5 +1,0 @@
-streamlit
-openbabel
-rdkit-pypi
-molvs
-protobuf~=3.19.0
