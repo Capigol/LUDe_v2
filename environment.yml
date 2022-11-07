@@ -4,7 +4,6 @@ channels:
 - conda-forge
 dependencies:
     - conda-forge: openbabel
-    - conda-forge: streamlit
     - pip
     - pip:
          - molvs==0.1.1
