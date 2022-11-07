@@ -1,6 +1,5 @@
-name: openbabel_v1
+name: LUDe_v2
 channels:
-- conda-forge
 - defaults
 dependencies:
     - openbabel
