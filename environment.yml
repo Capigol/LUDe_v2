@@ -3,10 +3,10 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-    - openbabel
+    - conda-forge: openbabel
+    - conda-forge: streamlit
     - pip
     - pip:
-         - streamlit
          - molvs==0.1.1
          - rdkit-pypi==2022.3.3
          - protobuf~=3.19.0
