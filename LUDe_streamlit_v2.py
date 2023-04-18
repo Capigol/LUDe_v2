@@ -86,11 +86,6 @@ text = '''
 '''
 
 
-#st.markdown("""
- #        **To cite the application, please reference XXXXXXXXX**
- #        """)
-
-
 image = Image.open('workflow_lude.png')
 st.image(image, caption='LUDe Workflow')
 
