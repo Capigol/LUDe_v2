@@ -3,7 +3,7 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-    - openbabel==3.1.1
+    - openbabel
     - pip
     - pip:
          - molvs
