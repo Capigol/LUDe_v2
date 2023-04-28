@@ -22,8 +22,23 @@ import random
 from time import process_time
 import os
 import time
-
+import subprocess
 import sys
+import time
+from io import StringIO
+import sys
+
+try:
+    # from openbabel import OBMol, OBConversion
+    from openbabel import openbabel
+except ModuleNotFoundError as e:
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/usr/include/openbabel3" --global-option="-L/usr/lib/openbabel" openbabel'], shell=True)
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/include/openbabel3" --global-option="-L/home/appuser/lib/openbabel" openbabel'], shell=True)
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/usr/include/openbabel3" --global-option="-L/home/appuser/usr/lib/openbabel" openbabel'], shell=True)
+    # wait for subprocess to install package before running your actual code below
+    time.sleep(90)
+    
+import os
 from openbabel import openbabel
 from molvs import Standardizer
 
