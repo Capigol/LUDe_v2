@@ -1,3 +1,4 @@
 swig
 openbabel
 libopenbabel-dev
+rdkit::rdkit
