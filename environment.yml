@@ -3,6 +3,3 @@ channels:
 - defaults
 - conda-forge
 - openbabel
-dependencies:
-    - swig
-    - libopenbabel-dev
