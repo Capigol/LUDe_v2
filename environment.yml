@@ -3,3 +3,5 @@ channels:
 - defaults
 - conda-forge
 - openbabel
+pip:
+- rdkit-pypi
