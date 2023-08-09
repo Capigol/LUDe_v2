@@ -3,4 +3,4 @@ channels:
 - defaults
 - conda-forge
 - openbabel
-- rdkit
+- https://conda.anaconda.org/rdkit
