@@ -5,4 +5,4 @@ channels:
 - openbabel
 dependencies:
     - swig
-    - openbabel
+    - libopenbabel-dev
