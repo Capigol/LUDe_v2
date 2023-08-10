@@ -2,10 +2,8 @@ name: LUDe_v2
 channels:
 - defaults
 - conda-forge
-- openbabel
 dependencies:
   - swig
-  - openbabel=2.4.1=py27_1
   - pip
   - pip:
     - rdkit-pypi
