@@ -1,7 +1,7 @@
 name: LUDe_v2
 channels:
-- defaults
-- conda-forge
+  - defaults
+  - conda-forge
 dependencies:
   - pip
   - pip:
