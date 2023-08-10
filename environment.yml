@@ -5,6 +5,7 @@ channels:
 - openbabel
 - https://conda.anaconda.org/rdkit
 dependencies:
+  - openbabel
   - rdkit
   - pip
   - pip:
