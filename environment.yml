@@ -5,8 +5,6 @@ channels:
 - openbabel
 dependencies:
   - swig
-  - openbabel
-  - rdkit
   - openbabel=2.4.1=py27_1
   - pip
   - pip:
