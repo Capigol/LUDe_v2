@@ -6,5 +6,6 @@ channels:
 - https://conda.anaconda.org/rdkit
 dependencies:
   - rdkit
+  - pip
   - pip:
     - rdkit-pypi
