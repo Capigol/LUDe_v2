@@ -4,3 +4,7 @@ channels:
 - conda-forge
 - openbabel
 - https://conda.anaconda.org/rdkit
+dependencies:
+  - rdkit
+  - pip:
+    - rdkit-pypi
