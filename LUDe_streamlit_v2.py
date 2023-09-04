@@ -28,21 +28,9 @@ import time
 from io import StringIO
 import sys
 
-#import conda.cli
-#conda.cli.main('conda', 'install',  '-y', 'openbabel')
-
-#try:
-    # from openbabel import OBMol, OBConversion
-    #from openbabel import openbabel
-#except ModuleNotFoundError as e:
-    #subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/usr/include/openbabel3" --global-option="-L/usr/lib/openbabel" openbabel'], shell=True)
-    #subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/include/openbabel3" --global-option="-L/home/appuser/lib/openbabel" openbabel'], shell=True)
-    #subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/usr/include/openbabel3" --global-option="-L/home/appuser/usr/lib/openbabel" openbabel'], shell=True)
-    # wait for subprocess to install package before running your actual code below
-    #time.sleep(90)
     
 import os
-#from openbabel import openbabel
+from openbabel import openbabel
 from molvs import Standardizer
 
 start = time.time()
@@ -357,10 +345,10 @@ def Standardization(molecula_ok, i, s):
         mol_standarizado = s.isotope_parent(mol_standarizado, skip_standardize= True) #Return the isotope parent of a given molecule, has all atoms replaced with the most abundant isotope for that element.
        
         smile_standarizado = Chem.MolToSmiles(mol_standarizado)
-        #ionized_smile = charges_ph(smile_standarizado)
-        #smile_checked = smile_obabel_corrector(ionized_smile)
+        ionized_smile = charges_ph(smile_standarizado)
+        smile_checked = smile_obabel_corrector(ionized_smile)
         
-        mol_checked = Chem.MolFromSmiles(smile_standarizado)
+        mol_checked = Chem.MolFromSmiles(smile_checked)
     except:
         st.write("**Oh no! There is a problem with standarization of one SMILES.**")
         st.write("**Please check your molecule: **" + str(i))
