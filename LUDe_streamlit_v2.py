@@ -69,7 +69,7 @@ st.write("""
 LUDe (LIDEB’s Useful Decoys) is a WebApp that generates, from a set of active compounds, decoys (putative inactive compounds)
 which can be used to retrospectively validate virtual screening tools/protocols. Decoys are molecules that have not been tested
 against a molecular target of interest but due to their structural features are presumably not prone to bind the target with
-high affinity. LUDe finds decoys in a curated ChEMBL27 database; these decoys are paired with the known active compounds in
+high affinity. LUDe finds decoys in a curated ChEMBL30 database; these decoys are paired with the known active compounds in
 relation to certain general physicochemical properties (e.g., molecular weight, log P, and others) but are topologically different
 from the query compounds. LUDe is conceptually similar to the Directory of Useful Decoys enhanced, but additional filters have been
 serially implemented to assure the topological dissimilarity between the decoys and the active compounds used as input.
